@@ -4,6 +4,7 @@
 
 
 
+
 .btn-gradient {
   background: linear-gradient(
     125.07deg,
@@ -11,3 +12,4 @@
     rgba(159, 98, 242, 1) 100%
   );
 }
+
