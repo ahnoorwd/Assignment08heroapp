@@ -1,0 +1,272 @@
+[
+  {
+    "image": "https://i.ibb.co/C3tBsfpF/demo-app-2.webp",
+    "title": "Taskify - Daily Planner",
+    "companyName": "BrightWorks Labs",
+    "id": 1,
+    "description": "Taskify is your personal productivity companion designed to help you organize daily tasks, set smart reminders, and track your progress seamlessly. With elegant design and cross-device sync, managing your goals has never been easier.",
+    "size": 42,
+    "reviews": 15823,
+    "ratingAvg": 4.6,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 640 },
+      { "name": "2 star", "count": 912 },
+      { "name": "3 star", "count": 2310 },
+      { "name": "4 star", "count": 4970 },
+      { "name": "5 star", "count": 8991 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/9HtbjqzC/434x0w.webp",
+    "title": "FitLife Tracker",
+    "companyName": "WellnessEdge",
+    "id": 2,
+    "description": "FitLife Tracker helps you stay active and healthy by monitoring your workouts, steps, heart rate, and sleep cycles. Personalized recommendations guide you toward a better lifestyle, supported by AI-driven analytics.",
+    "size": 58,
+    "reviews": 20341,
+    "ratingAvg": 4.4,
+    "downloads": 9,
+    "ratings": [
+      { "name": "1 star", "count": 1203 },
+      { "name": "2 star", "count": 1710 },
+      { "name": "3 star", "count": 3109 },
+      { "name": "4 star", "count": 6273 },
+      { "name": "5 star", "count": 10046 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/qL3TXTMw/demo-app-1.webp",
+    "title": "NotePilot",
+    "companyName": "CloudSync Technologies",
+    "id": 3,
+    "description": "NotePilot lets you capture thoughts instantly, categorize them intelligently, and sync across all your devices. Whether it’s study notes, work ideas, or creative writing, NotePilot keeps everything organized and accessible.",
+    "size": 29,
+    "reviews": 11352,
+    "ratingAvg": 4.8,
+    "downloads": 11,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 430 },
+      { "name": "3 star", "count": 1012 },
+      { "name": "4 star", "count": 2841 },
+      { "name": "5 star", "count": 6819 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/bRgRZvn4/demo-app-3.webp",
+    "title": "MindEase - Meditation App",
+    "companyName": "CalmCore",
+    "id": 4,
+    "description": "MindEase offers guided meditations, relaxing soundscapes, and mindfulness courses to help reduce stress, anxiety, and improve focus. Built for all levels, from beginners to mindfulness experts.",
+    "size": 77,
+    "reviews": 28890,
+    "ratingAvg": 4.7,
+    "downloads": 11,
+    "ratings": [
+      { "name": "1 star", "count": 1400 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 3700 },
+      { "name": "4 star", "count": 6400 },
+      { "name": "5 star", "count": 15590 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/VcbRKRV2/demo-app-5.webp",
+    "title": "PhotoScape Pro",
+    "companyName": "PixLab Studio",
+    "id": 5,
+    "description": "PhotoScape Pro gives you professional photo editing tools with an intuitive interface. Apply filters, remove backgrounds, enhance lighting, and share instantly to social platforms in one tap.",
+    "size": 91,
+    "reviews": 50672,
+    "ratingAvg": 4.5,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 3123 },
+      { "name": "2 star", "count": 4071 },
+      { "name": "3 star", "count": 8564 },
+      { "name": "4 star", "count": 15321 },
+      { "name": "5 star", "count": 19600 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/mrFTBxxz/demo-app-6.webp",
+    "title": "BudgetPro-Expense",
+    "companyName": "FinTech One",
+    "id": 6,
+    "description": "BudgetPro helps users track income, expenses, and savings goals with visual analytics. Set budgets, receive spending alerts, and get monthly financial insights automatically.",
+    "size": 36,
+    "reviews": 17582,
+    "ratingAvg": 4.3,
+    "downloads": 4,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1320 },
+      { "name": "3 star", "count": 2780 },
+      { "name": "4 star", "count": 5400 },
+      { "name": "5 star", "count": 7082 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/XxpzmFTr/demo-app-4.webp",
+    "title": "LinguaLearn",
+    "companyName": "EduBridge",
+    "id": 7,
+    "description": "LinguaLearn makes learning new languages engaging through gamified lessons, speech recognition, and daily practice reminders. It covers 25+ languages including Spanish, French, and Japanese.",
+    "size": 64,
+    "reviews": 32100,
+    "ratingAvg": 4.9,
+    "downloads": 2,
+    "ratings": [
+      { "name": "1 star", "count": 870 },
+      { "name": "2 star", "count": 950 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 4100 },
+      { "name": "5 star", "count": 24700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/VcbRKRV2/demo-app-5.webp",
+    "title": "SoundWave Music Player",
+    "companyName": "SonicStream",
+    "id": 8,
+    "description": "SoundWave is a sleek, ad-free music player supporting all major formats and cloud playlists. Enjoy seamless playback with smart equalizer presets and offline mode support.",
+    "size": 45,
+    "reviews": 27890,
+    "ratingAvg": 4.2,
+    "downloads": 3,
+    "ratings": [
+      { "name": "1 star", "count": 2400 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 5100 },
+      { "name": "4 star", "count": 7900 },
+      { "name": "5 star", "count": 9590 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/bRgRZvn4/demo-app-3.webp",
+    "title": "TravelMate",
+    "companyName": "Nomadify",
+    "id": 9,
+    "description": "TravelMate simplifies trip planning with intelligent itinerary suggestions, local recommendations, and real-time expense tracking. Discover new destinations and travel smarter than ever before.",
+    "size": 83,
+    "reviews": 15430,
+    "ratingAvg": 4.5,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 2300 },
+      { "name": "4 star", "count": 4800 },
+      { "name": "5 star", "count": 8530 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/C3tBsfpF/demo-app-2.webp",
+    "title": "DocuScan - PDF Scanner",
+    "companyName": "Scanly",
+    "id": 10,
+    "description": "DocuScan transforms your phone into a portable scanner. Scan, edit, and convert documents into PDFs instantly. OCR technology recognizes text in multiple languages for easy editing.",
+    "size": 39,
+    "reviews": 27300,
+    "ratingAvg": 4.6,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 1300 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 7200 },
+      { "name": "5 star", "count": 14000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/C3tBsfpF/demo-app-2.webp",
+    "title": "QuickChat Messenger",
+    "companyName": "NovaNet",
+    "id": 11,
+    "description": "QuickChat offers lightning-fast messaging, video calls, and group chats with top-tier encryption. Experience smoother communication across Android, iOS, and web platforms.",
+    "size": 67,
+    "reviews": 51200,
+    "ratingAvg": 4.1,
+    "downloads": 8,
+    "ratings": [
+      { "name": "1 star", "count": 4100 },
+      { "name": "2 star", "count": 5300 },
+      { "name": "3 star", "count": 8700 },
+      { "name": "4 star", "count": 15300 },
+      { "name": "5 star", "count": 17800 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/C3tBsfpF/demo-app-2.webp",
+    "title": "Shopzy - Smart Shopping",
+    "companyName": "RetailEdge",
+    "id": 12,
+    "description": "Shopzy curates personalized deals, tracks price drops, and simplifies online shopping. Built with AI to help you save more every time you buy.",
+    "size": 52,
+    "reviews": 29800,
+    "ratingAvg": 4.4,
+    "downloads": 2,
+    "ratings": [
+      { "name": "1 star", "count": 1700 },
+      { "name": "2 star", "count": 2100 },
+      { "name": "3 star", "count": 3600 },
+      { "name": "4 star", "count": 8100 },
+      { "name": "5 star", "count": 14300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/C3tBsfpF/demo-app-2.webp",
+    "title": "WeatherNow",
+    "companyName": "SkyTech Systems",
+    "id": 13,
+    "description": "WeatherNow provides accurate real-time weather updates, air quality indexes, and storm alerts using NASA and NOAA satellite data. Clean UI and detailed forecasts make it a must-have.",
+    "size": 48,
+    "reviews": 21340,
+    "ratingAvg": 4.3,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 1300 },
+      { "name": "2 star", "count": 1900 },
+      { "name": "3 star", "count": 3400 },
+      { "name": "4 star", "count": 6700 },
+      { "name": "5 star", "count": 9040 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/C3tBsfpF/demo-app-2.webp",
+    "title": "StudyGenie - Smart Learning",
+    "companyName": "EduVerse Labs",
+    "id": 14,
+    "description": "StudyGenie revolutionizes study routines with AI-driven flashcards, topic quizzes, and concept maps. It’s your all-in-one tool to learn smarter and retain information faster.",
+    "size": 63,
+    "reviews": 32700,
+    "ratingAvg": 4.8,
+    "downloads": 9,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 5400 },
+      { "name": "5 star", "count": 24000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/C3tBsfpF/demo-app-2.webp",
+    "title": "CookMate - Recipe Finder",
+    "companyName": "KitchenHub",
+    "id": 15,
+    "description": "CookMate brings thousands of recipes from around the world to your fingertips. Filter by ingredients, cuisine, or dietary preferences and save your favorites for offline viewing.",
+    "size": 50,
+    "reviews": 18900,
+    "ratingAvg": 4.5,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2600 },
+      { "name": "4 star", "count": 5600 },
+      { "name": "5 star", "count": 9500 }
+    ]
+  }
+]

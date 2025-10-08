@@ -1,9 +1,15 @@
 import React from "react";
 import heropng from "../assets/hero.png";
+import UseproductsHook from "../Hooks/UseproductsHook";
+import Appcard from "../Components/Appcard";
+import { Link } from "react-router";
 
 const Home = () => {
+  const { apps } = UseproductsHook();
+  const sliceapp = apps.slice(0,8)
+  console.log(apps);
   return (
-    <div className="flex flex-col items-center justify-center text-center px-6 md:px-20 py-16 bg-white">
+    <div className="flex flex-col items-center justify-center text-center px-6 md:px-20 py-16 ">
       {/* Heading Section */}
       <div className="max-w-3xl">
         <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -75,17 +81,26 @@ const Home = () => {
           <div>
             <h3 className="text-4xl font-bold">132+</h3>
             <p className="text-sm opacity-90">Active Apps</p>
-            <p className="text-xs opacity-80 mt-1">
-              31 More Will Launch Soon
-            </p>
+            <p className="text-xs opacity-80 mt-1">31 More Will Launch Soon</p>
           </div>
         </div>
       </div>
 
-
-     
-
-
+      <div>
+        <div>
+          <h3 className="text-[48px] mt-4 font-bold">Trending Apps here </h3>
+          <p className="text-[#627382] text-[20px]">
+            {" "}
+            Explore All Trending Apps on the Market developed by us
+          </p>
+        </div>
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {
+            sliceapp.map(app=><Appcard app={app}></Appcard>)
+        }
+        </div>
+      </div>
+      <Link to='/apps' className="btn mt-6 bg-blue-400 text-white text-[18px]">Show All Apps</Link>
     </div>
   );
 };
