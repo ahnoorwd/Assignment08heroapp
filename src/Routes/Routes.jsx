@@ -5,11 +5,13 @@ import Mainlayout from "../Layout/Mainlayout";
 import Installation from "../Pages/Installation";
 import Error from "../Pages/Error";
 import Appdetails from "../Pages/Appdetails";
+import Loadingspinner from "../Components/Loadingspinner";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component:Mainlayout,
+    
     children:[
 
     {

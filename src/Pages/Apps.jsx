@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import UseproductsHook from "../Hooks/UseproductsHook";
 import Appcard from "../Components/Appcard";
+import Loadingspinner from "../Components/Loadingspinner";
 
 const Apps = () => {
-  const { apps } = UseproductsHook();
+  const { apps ,loading } = UseproductsHook();
   const [search,setsearch] = useState("")
   const term = search.trim().toLowerCase()
   const searchapp =term?apps.filter(sapp=>sapp.title.toLowerCase().includes(term)):apps
@@ -24,11 +25,14 @@ const Apps = () => {
         </label>
       </div>
 
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 py-4">
+      {
+        loading?<Loadingspinner count={15}></Loadingspinner>:
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 py-4">
         {searchapp.map((app) => (
           <Appcard app={app}></Appcard>
         ))}
       </div>
+      }
     </div>
   );
 };

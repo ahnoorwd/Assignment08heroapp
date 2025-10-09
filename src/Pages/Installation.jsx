@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 import UseproductsHook from "../Hooks/UseproductsHook";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Loadingspinner from "../Components/Loadingspinner";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
   const [sortOrder, setSortOrder] = useState("none");
-  const { apps } = UseproductsHook();
+  const { apps ,loading } = UseproductsHook();
 
   useEffect(() => {
     const storedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
@@ -35,6 +36,14 @@ const Installation = () => {
     }
     return mergedApps;
   })();
+
+   if (loading) {
+  return (
+    <div className="flex justify-center items-center h-screen">
+      <Loadingspinner count={3} />
+    </div>
+  );
+}
 
   return (
     <div className="px-4 md:px-10 py-6">

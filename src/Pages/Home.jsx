@@ -3,13 +3,15 @@ import heropng from "../assets/hero.png";
 import UseproductsHook from "../Hooks/UseproductsHook";
 import Appcard from "../Components/Appcard";
 import { Link } from "react-router";
+import Loadingspinner from "../Components/Loadingspinner";
 
 const Home = () => {
-  const { apps } = UseproductsHook();
+  const { apps,loading } = UseproductsHook();
   const sliceapp = apps.slice(0,8)
   console.log(apps);
   return (
     <div className="flex flex-col items-center justify-center text-center px-6 md:px-20 py-16 ">
+      
       {/* Heading Section */}
       <div className="max-w-3xl">
         <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -94,11 +96,17 @@ const Home = () => {
             Explore All Trending Apps on the Market developed by us
           </p>
         </div>
-        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {
+          loading? <Loadingspinner></Loadingspinner>:
+          <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {
+
+        loading? <Loadingspinner></Loadingspinner>:
+
             sliceapp.map(app=><Appcard app={app}></Appcard>)
         }
         </div>
+        }
       </div>
       <Link to='/apps' className="btn mt-6 bg-blue-400 text-white text-[18px]">Show All Apps</Link>
     </div>
