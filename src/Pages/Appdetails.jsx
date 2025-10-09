@@ -25,7 +25,7 @@ const Appdetails = () => {
   const [isInstalled, setIsInstalled] = useState(false);
 
   useEffect(() => {
-    // Check if this app is already installed
+    // data are coming here from lcl storgae and try to find  
     const installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
     const alreadyInstalled = installedApps.some((app) => app.id === appinfo?.id);
     setIsInstalled(alreadyInstalled);
@@ -100,7 +100,7 @@ const Appdetails = () => {
             <div className="flex flex-col items-center">
               <MdDownload className="text-green-600 text-3xl mb-1" />
               <p className="text-sm text-gray-500">Downloads</p>
-              <h3 className="text-2xl font-bold text-gray-800">{downloads}</h3>
+              <h3 className="text-2xl font-bold text-gray-800">{downloads}M</h3>
             </div>
 
             <div className="flex flex-col items-center">

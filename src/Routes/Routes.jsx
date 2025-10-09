@@ -11,6 +11,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     Component:Mainlayout,
+    errorElement:Error,
     
     children:[
 
@@ -29,15 +30,17 @@ const router = createBrowserRouter([
     {
         path:'/appdetails/:id',
         Component:Appdetails,
-    }
+    },
+
+    {
+    path:'*',
+    Component:Error,
+   }
 
 
     ]
   },
-{
-    path:'*',
-    Component:Error,
-}
+
  
 ]);
 export default router

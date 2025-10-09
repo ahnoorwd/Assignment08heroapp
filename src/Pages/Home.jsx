@@ -3,15 +3,15 @@ import heropng from "../assets/hero.png";
 import UseproductsHook from "../Hooks/UseproductsHook";
 import Appcard from "../Components/Appcard";
 import { Link } from "react-router";
+import { MdSlideshow } from "react-icons/md";
 import Loadingspinner from "../Components/Loadingspinner";
 
 const Home = () => {
-  const { apps,loading } = UseproductsHook();
-  const sliceapp = apps.slice(0,8)
+  const { apps, loading } = UseproductsHook();
+  const sliceapp = apps.slice(0, 8);
   console.log(apps);
   return (
     <div className="flex flex-col items-center justify-center text-center px-6 md:px-20 py-16 ">
-      
       {/* Heading Section */}
       <div className="max-w-3xl">
         <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -37,18 +37,28 @@ const Home = () => {
       {/* Store Buttons */}
       <div className="flex flex-wrap justify-center gap-4 mt-6">
         <button className="flex items-center gap-2 bg-white border border-gray-300 hover:border-[#632ee3] rounded-lg shadow-md px-5 py-2 transition">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-            alt="Google Play"
-            className="h-10"
-          />
+          <a
+            href="https://play.google.com/store/games?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play"
+              className="h-10"
+            />
+          </a>
         </button>
         <button className="flex items-center gap-2 bg-white border border-gray-300 hover:border-[#632ee3] rounded-lg shadow-md px-5 py-2 transition">
-          <img
+         <a href="https://www.apple.com/app-store/"
+         target="_blank"
+         >
+           <img
             src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
             alt="App Store"
             className="h-10"
           />
+         </a>
         </button>
       </div>
 
@@ -57,12 +67,12 @@ const Home = () => {
         <img
           src={heropng}
           alt="Hero"
-          className="w-[280px] md:w-[400px] mx-auto drop-shadow-2xl"
+          className="w-[280px] md:w-[550px] mx-auto drop-shadow-2xl"
         />
       </div>
 
       {/* Stats Section */}
-      <div className="w-full mt-16 py-12 bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white text-center rounded-t-3xl">
+      <div className="w-full  py-12 bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white text-center rounded-t-3xl">
         <h2 className="text-2xl md:text-3xl font-semibold mb-8">
           Trusted By Millions, Built For You
         </h2>
@@ -96,19 +106,21 @@ const Home = () => {
             Explore All Trending Apps on the Market developed by us
           </p>
         </div>
-        {
-          loading? <Loadingspinner></Loadingspinner>:
+        {loading ? (
+          <Loadingspinner></Loadingspinner>
+        ) : (
           <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {
-
-        loading? <Loadingspinner></Loadingspinner>:
-
-            sliceapp.map(app=><Appcard app={app}></Appcard>)
-        }
-        </div>
-        }
+            {loading ? (
+              <Loadingspinner></Loadingspinner>
+            ) : (
+              sliceapp.map((app) => <Appcard app={app}></Appcard>)
+            )}
+          </div>
+        )}
       </div>
-      <Link to='/apps' className="btn mt-6 bg-blue-400 text-white text-[18px]">Show All Apps</Link>
+      <Link to="/apps" className="btn mt-6 bg-blue-400 text-white text-[18px]">
+       <MdSlideshow /> Show All Apps
+      </Link>
     </div>
   );
 };

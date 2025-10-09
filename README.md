@@ -1,16 +1,23 @@
-# React + Vite
+# Hero.IO Apps House
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🧩 Description
+Hero.IO Apps House is a modern web application that showcases all applications developed by Hero.IO.  
+It features a responsive layout with sections for browsing, searching, and viewing app details.  
+The design is built for performance, clarity, and a seamless user experience across all devices.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
+- **React.js** – Frontend JavaScript framework  
+- **Tailwind CSS** – Utility-first CSS framework for modern styling  
+- **DaisyUI** – Tailwind component library for clean UI  
+- **Vite** – Fast development build tool  
+- **React Icons** – For high-quality scalable icons  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💡 Features
+- Responsive design for all screen sizes  
+- Search functionality with live loading spinner  
+- Dynamic app listing and filtering  
+- Modern dark-themed footer and clean layout
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ *Developed with ❤️ by Hero.IO Apps House Team*

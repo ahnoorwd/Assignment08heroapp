@@ -1,6 +1,11 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { FaGithub } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import { FaAppStoreIos } from "react-icons/fa6";
+import { MdInstallDesktop } from "react-icons/md";
+
 
 const Navbar = () => {
   return (
@@ -61,7 +66,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-2">
-          <img src={logo} alt="Hero Io Logo" className="w-10 h-10" />
+          <Link to='/'><img   src={logo} alt="Hero Io Logo" className="w-10 h-10" /></Link>
           <NavLink to="/" className="text-2xl font-bold text-blue-600">
             Hero Io
           </NavLink>
@@ -77,7 +82,7 @@ const Navbar = () => {
                 isActive ? "text-blue-500 font-bold" : ""
               }
             >
-              Home
+           <FaHome />   Home
             </NavLink>
           </li>
           <li>
@@ -87,7 +92,7 @@ const Navbar = () => {
                 isActive ? "text-blue-500 font-bold" : ""
               }
             >
-              Apps
+            <FaAppStoreIos />  Apps
             </NavLink>
           </li>
           <li>
@@ -97,14 +102,21 @@ const Navbar = () => {
                 isActive ? "text-blue-500 font-bold" : ""
               }
             >
-              Installation
+            <MdInstallDesktop />  Installation
             </NavLink>
           </li>
         </ul>
       </div>
 
       <div className="navbar-end">
-        <Link to='/' className="btn btn-gradient  text-white text-[16px] 12px 16px 12px 16px">Go Github</Link>
+        <a
+          href="https://github.com/ahnoorwd"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-gradient text-white text-[16px] px-4 py-2"
+        >
+        <FaGithub />  Contribute On
+        </a>{" "}
       </div>
     </div>
   );

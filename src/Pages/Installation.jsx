@@ -3,6 +3,8 @@ import UseproductsHook from "../Hooks/UseproductsHook";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Loadingspinner from "../Components/Loadingspinner";
+import { FaDownload } from "react-icons/fa6";
+import { CiStar } from "react-icons/ci";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
@@ -21,13 +23,13 @@ const Installation = () => {
     toast.success("App uninstalled successfully!"); // ✅ Toastify success
   };
 
-  // Merge localStorage data with hook data
+  //i did together apps inhere 
   const mergedApps = installedApps.map((app) => {
     const matched = apps.find((a) => a.id === app.id);
     return matched ? { ...matched } : app;
   });
 
-  // Sorting logic
+  // Sorting 
   const sortedApps = (() => {
     if (sortOrder === "downloads-asc") {
       return [...mergedApps].sort((a, b) => a.downloads - b.downloads);
@@ -55,8 +57,8 @@ const Installation = () => {
       {/* tost show here on top */}
       <ToastContainer
         position="top-center"
-        autoClose={2000}       // auto close in 2 seconds
-        hideProgressBar={true} // hide progress bar for cleaner look
+        autoClose={2000}       
+        hideProgressBar={true} 
         newestOnTop={false}
         closeOnClick
         rtl={false}
@@ -66,7 +68,7 @@ const Installation = () => {
       />
 
       <div className="space-y-4 w-full md:w-3/5 mx-auto">
-        {/* Header + Sort */}
+     
         <div className="flex flex-col sm:flex-row items-center justify-between mb-4 gap-3">
           <p className="font-bold text-[18px]">({sortedApps.length}) Apps Found</p>
 
@@ -83,7 +85,7 @@ const Installation = () => {
           </label>
         </div>
 
-        {/* App List */}
+        {/* App Listtttt */}
         {sortedApps.length > 0 ? (
           sortedApps.map((app) => (
             <div
@@ -100,8 +102,8 @@ const Installation = () => {
                   <h3 className="font-semibold text-gray-800">{app.title}</h3>
                   <p className="text-sm text-gray-500">{app.companyName}</p>
                   <p className="text-sm text-gray-500 flex items-center gap-2">
-                    <span className="text-green-500 text-[20px]">⬇ {app.downloads}M</span>
-                    <span className="text-orange-500 text-[20px]">⭐ {app.ratingAvg}</span>
+                    <span className="text-green-500 text-[20px]"><div className="flex gap-1"><FaDownload /> {app.downloads}M</div></span>
+                    <span className="text-orange-500 text-[20px]"><div className="flex items-center"><CiStar />{app.ratingAvg}</div> </span>
                     <span className="text-[20px]">{app.size} MB</span>
                   </p>
                 </div>
